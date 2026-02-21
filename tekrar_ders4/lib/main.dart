@@ -41,27 +41,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Container(
-              height: 100,
-              width: 200,
-              color: Colors.red,
-              child: const Center(child: Text("Merhaba")),
-            ),
-            Container(
-              height: 100,
-              width: 200,
-              color: Colors.green,
-              child: const Center(child: Text("Flutter")),
-            ),
-            Container(
-              height: 100,
-              width: 200,
-              color: Colors.blue,
-              child: const Center(child: Text("Ders 3")),
+            const Text('You have pushed the button this many times:'),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
-        //column widgetleri alt alta dizilmesini sağlar,varsayılan başlangıç noktası sol üst köşedir,boyutu içindeki widgetlara göre değişir.
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
       ),
     );
   }
