@@ -38,10 +38,30 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Row(
-        children: [Container(width: 400, height: 400, color: Colors.red)],
+        children: [
+          //container görsel nesneler oluşturmak için kullanılır, boyut ve renk verebiliriz
+          //container içine child widget ekleyebiliriz
+          Container(
+            margin: const EdgeInsets.all(
+              20,
+            ), //containerın etrafında boşluk oluşturabilirz
 
-        //container görsel nesneler oluşturmak için kullanılır, boyut ve renk verebiliriz
-        //container içine child widget ekleyebiliriz
+            width: 400,
+            height: 400,
+            color: Colors.red,
+            child: Text("Data"),
+
+            //container özelleştirebiliriz
+            decoration: BoxDecoration(
+              color: Colors.red,//arka plan rengi
+              border: Border.all(color: Colors.black,//çerçeve renk
+              width: 5),//çerçeve kalınlığı
+              borderRadius: BorderRadius.circular(
+                20,
+              ), //container köşelerini yuvarlar
+            ),
+          ), //içerisne text ekleyebiliriz
+        ],
       ),
     );
   }
