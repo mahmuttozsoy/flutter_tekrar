@@ -37,23 +37,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+      body: Stack(
+        children: [
+          Container(width: 100, height: 100, color: Colors.red),
+          Container(width: 80, height: 80, color: Colors.green),
+          Container(width: 60, height: 60, color: Colors.blue),
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      //stack widgetların üst üste durmasını sağlar
+      //ilk eklenen en altta yer alır
+      //varsıyılan başlangıç noktası sol üst köşedir
+      //boyutu içindeki widgetlara göre değişir
     );
   }
 }
