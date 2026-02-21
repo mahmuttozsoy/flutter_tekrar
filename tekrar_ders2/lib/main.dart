@@ -41,25 +41,26 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           Container(
             height: 100,
-              width: 200,
-              color: Colors.red,
-              child: const Center(child: Text("Merhaba")),
-            ),
-            Container(
-              height: 100,
-              width: 200,
-              color: Colors.green,
-              child: const Center(child: Text("Flutter")),
-            ),
-            Container(
-              height: 100,
-              width: 200,
-              color: Colors.blue,
-              child: const Center(child: Text("Ders 2")),
-            ),
-            //row widgetlerin yanyana dizilmesini sağlar,varsayılan olarak soldan sağa dizilirler,boyutu içindeki widgetlara göre değişir.
-          ],
-        ),
-      );
+            width: 200,
+            color: Colors.red,
+            child: const Center(child: Text("Merhaba")),
+          ),
+          Container(
+            height: 100,
+            width: 200,
+            color: Colors.green,
+            child: const Center(child: Text("Flutter")),
+          ),
+          Container(
+            height: 100,
+            width: 200,
+            color: Colors.blue,
+            child: const Center(child: Text("Ders2")),
+          ),
+
+          //row widgetlerin yanyana dizilmesini sağlar,varsayılan olarak soldan sağa dizilirler,boyutu içindeki widgetlara göre değişir.
+        ],
+      ),
+    );
   }
 }
