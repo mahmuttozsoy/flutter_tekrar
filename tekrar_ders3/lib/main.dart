@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter tekrar ders 2'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -37,10 +37,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
         title: Text(widget.title),
       ),
-      body: Row(
-        children: <Widget>[
-          Container(
-            height: 100,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              height: 100,
               width: 200,
               color: Colors.red,
               child: const Center(child: Text("Merhaba")),
@@ -55,11 +57,11 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 100,
               width: 200,
               color: Colors.blue,
-              child: const Center(child: Text("Ders 2")),
+              child: const Center(child: Text("Ders 3")),
             ),
-            //row widgetlerin yanyana dizilmesini sağlar,varsayılan olarak soldan sağa dizilirler,boyutu içindeki widgetlara göre değişir.
           ],
         ),
-      );
+      ),
+    );
   }
 }
