@@ -37,32 +37,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
         title: Text(widget.title),
       ),
-      body: Row(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          //container görsel nesneler oluşturmak için kullanılır, boyut ve renk verebiliriz
-          //container içine child widget ekleyebiliriz
-          Container(
-            margin: const EdgeInsets.all(
-              20,
-            ), //containerın etrafında boşluk oluşturabilirz
-
-            width: 400,
-            height: 400,
-            color: Colors.red,
-            child: Text("Data"), //içerisne text ekleyebiliriz
-            //container özelleştirebiliriz
-            decoration: BoxDecoration(
-              color: Colors.red, //arka plan rengi
-              border: Border.all(
-                color: Colors.black, //çerçeve renk
-                width: 5,
-              ), //çerçeve kalınlığı
-              borderRadius: BorderRadius.circular(
-                20,
-              ), //container köşelerini yuvarlar
-            ),
-          ),
+          Container(width: 80, height: 80, color: Colors.green),
+          Container(width: 60, height: 60, color: Colors.blue),
+          Container(width: 40, height: 40, color: Colors.yellow),
         ],
+        //row veya column içinde row ise yatayda,column ise dikeyde hizalama yapar
+        //end,center,start,spaceBetween, spaceEvenly gibi hizalama seçenekleri vardır
       ),
     );
   }
