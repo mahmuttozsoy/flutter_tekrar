@@ -40,15 +40,23 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Row(
         //expanded widgeti ile containerın genişliğini ekranın geri kalanına yayabiliriz
         children: [
+          // Expanded(
+          //   child: Container(
+          //     height: 200,
+          //     width: 200,
+          //     color: Colors.green,
+          //     child: Center(child: Text("Expanded Kullanımı")),
+          //   ),
+          // ),
+          // Container(height: 200, width: 200, color: Colors.red),
           Expanded(
-            child: Container(
-              height: 200,
-              width: 200,
-              color: Colors.green,
-              child: Center(child: Text("Expanded Kullanımı")),
-            ),
+            flex: 10,
+            child: Container(height: 200, width: 200, color: Colors.green),
           ),
-          Container(height: 200, width: 200, color: Colors.red),
+          Expanded(
+            flex: 30,
+            child: Container(height: 200, width: 200, color: Colors.blue),
+          ),
         ],
       ),
     );
