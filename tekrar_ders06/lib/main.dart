@@ -48,8 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             width: 400,
             height: 400,
-            color: Colors.red,
-            child: Text("Data"), //içerisne text ekleyebiliriz
+            color: Colors.red, //içerisne text ekleyebiliriz
             //container özelleştirebiliriz
             decoration: BoxDecoration(
               color: Colors.red, //arka plan rengi
@@ -61,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 20,
               ), //container köşelerini yuvarlar
             ),
+            child: Text("Data"),
           ),
         ],
       ),
